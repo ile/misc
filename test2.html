@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <script type='text/javascript'>
+      var googletag = googletag || {};
+      googletag.cmd = googletag.cmd || [];
+      console.log('1...');
+      (function() {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') +
+          '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+        console.log('2...');
+      })();
+
+      console.log('3...');
+      googletag.cmd.push(function() {
+        googletag.defineSlot('/130816018/blogistan', [728, 90], 'div-gpt-ad-1444394604360-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+      });
+
+    </script>
+</head>
+
+<body>
+  <!-- /130816018/blogistan -->
+  <div id='div-gpt-ad-1444394604360-0' style='height:90px; width:728px;'>
+  <script type='text/javascript'>
+  console.log('4...');
+  googletag.cmd.push(function() { googletag.display('div-gpt-ad-1444394604360-0'); });
+  </script>
+  </div>
+
+</body>
+</html>
